@@ -40,13 +40,8 @@ List spring =[
 		"org.springframework:spring-test:$spring_version"
 ]
 
-def log4j_version="2.9.0"
 List logger = [
-        "org.apache.logging.log4j:log4j-api:$log4j_version",
-        "org.apache.logging.log4j:log4j-core:$log4j_version",
-        "org.apache.logging.log4j:log4j-slf4j-impl:$log4j_version",
-        "org.apache.logging.log4j:log4j-web:$log4j_version",
-        "org.slf4j:jcl-over-slf4j:1.7.12"
+		'org.slf4j:slf4j-log4j12:1.7.25'
 ]
 
 dependencies {
@@ -55,21 +50,16 @@ dependencies {
 	
 	compile 'org.mybatis:mybatis:3.2.8'
     compile 'org.mybatis:mybatis-spring:1.2.2'
-    compile "com.fasterxml.jackson.core:jackson-databind:2.8.8.1"
-    runtime "com.fasterxml.jackson.core:jackson-databind:2.8.8.1"
+    compile "com.fasterxml.jackson.core:jackson-databind:2.9.6"
     compile 'io.netty:netty-all:4.1.15.Final'
-    runtime 'io.netty:netty-all:4.1.15.Final'
-    compile 'io.netty:netty-tcnative:2.0.0.Final'
-    runtime 'io.netty:netty-tcnative:2.0.0.Final'
+    compile 'io.netty:netty-tcnative:2.0.18.Final'
 	compile 'com.google.guava:guava:19.0'
-	runtime 'com.google.guava:guava:19.0'
 	compile 'mysql:mysql-connector-java:5.1.30'
 	compile 'com.alibaba:fastjson:1.2.29'
 	compile 'com.lmax:disruptor:3.3.7'
 
 	// web3j依赖
 	compile files('libs/web3sdk.jar')
-	runtime files('libs/web3sdk.jar')
 	compile 'org.apache.httpcomponents:httpclient:4.5.2',
 			'org.bouncycastle:bcprov-jdk15on:1.54',
 			'com.lambdaworks:scrypt:1.4.0',

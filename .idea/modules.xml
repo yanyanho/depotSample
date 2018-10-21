@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/depotSample.iml" filepath="$PROJECT_DIR$/depotSample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/depotSample_main.iml" filepath="$PROJECT_DIR$/.idea/modules/depotSample_main.iml" group="depotSample" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/depotSample_test.iml" filepath="$PROJECT_DIR$/.idea/modules/depotSample_test.iml" group="depotSample" />
+    </modules>
+  </component>
+</project>
